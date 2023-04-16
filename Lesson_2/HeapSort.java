@@ -19,8 +19,8 @@ public class HeapSort {
 
     private static void heapify(int arr[], int n, int i) {
         int largest = i; // Инициализируем наибольший элемент как корень
-        int l = 2 * i + 1; // левый
-        int r = 2 * i + 2; // правый
+        int l = 2 * i + 1; // левый дочерний элемент
+        int r = 2 * i + 2; // правый дочерний элемент
         // Если левый дочерний элемент больше корня
         if (l < n && arr[l] > arr[largest])
             largest = l;
